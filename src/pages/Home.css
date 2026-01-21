@@ -1,0 +1,76 @@
+.hero {
+  padding: 80px 30px;
+  text-align: center;
+  background: linear-gradient(135deg, #1a3a52 0%, #2d5a7b 100%);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.products {
+  max-width: 1400px;
+  margin: 60px auto;
+  padding: 30px;
+}
+
+.products h2 {
+  text-align: center;
+  color: #1a3a52;
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .products {
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  .products h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+}
+
+
